@@ -966,12 +966,10 @@ section {
 .panel-number {
     font-size: 4rem;
     font-weight: 800;
-    background: linear-gradient(135deg, rgba(41, 1, 108, 0.3) 0%, rgba(243, 52, 10, 0.2) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-accent);
     line-height: 1;
     margin-bottom: var(--spacing-sm);
+    text-shadow: 0 0 20px rgba(250, 99, 6, 0.3);
 }
 
 .panel-card h3 {
