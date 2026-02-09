@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme - PEAK 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="logos/logo-blue.png" alt="PEAK 2026" class="logo-img">
+                    <div class="logo-text-wrapper">
+                        <span class="logo-text">PEAK</span>
+                        <span class="logo-year">2026</span>
+                    </div>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="program.html" class="active">Programme</a></li>
+                    <li><a href="speakers.html">Intervenants</a></li>
+                    <li><a href="projects.html">Projets & Concours</a></li>
+                    <li><a href="partners.html">Partenaires</a></li>
+                    <li><a href="register.html" class="btn-nav">S'inscrire</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Programme PEAK 2026</h1>
+            <p>27-28 Février 2026 • Faculté Polytechnique – Université de Kinshasa</p>
+        </div>
+    </section>
+
+    <!-- Program Content -->
+    <section class="program-content">
+        <div class="container">
+            <div class="program-tabs">
+                <button class="program-tab active" data-day="day1">Jour 1 - Vendredi 27 Février</button>
+                <button class="program-tab" data-day="day2">Jour 2 - Samedi 28 Février</button>
+            </div>
+
+            <!-- Day 1 -->
+            <div class="program-day active" id="day1">
+                <h2>Jour 1 : Vendredi 27 Février 2026 (9h00 - 17h00)</h2>
+                
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">09h00 - 09h30</div>
+                        <div class="schedule-content">
+                            <h3>Cérémonie d'ouverture solennelle</h3>
+                            <ul class="schedule-items">
+                                <li>Allocution du Recteur de L'université de Kinshasa (10 min)</li>
+                                <li>Allocution du Doyen de la Faculté Polytechnique (10 min)</li>
+                                <li>Mot du Délégué Facultaire (5 min)</li>
+                                <li>Présentation des universités partenaires (5 min)</li>
+                            </ul>
+                            <div class="schedule-objective">
+                                <strong>Objectif :</strong> Créer une atmosphère dynamique et inspirante dès le départ.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">09h30 - 12h30</div>
+                        <div class="schedule-content">
+                            <h3>Panels par département</h3>
+                            <ul class="schedule-items">
+                                <li>Panel Génie Civil (40 min)</li>
+                                <li>Panel Génie Electrique (40 min)</li>
+                                <li>Panel Génie Informatique (40 min)</li>
+                                <li>Panel Génie Mécanique (40 min)</li>
+                                <li>Séances Questions-Réponses (20 min)</li>
+                            </ul>
+                            <div class="schedule-objective">
+                                <strong>Objectif :</strong> Exploiter les 4 thématiques par département.
+                            </div>
+                            
+                            <div class="panel-details" id="civil">
+                                <h4>Panel Génie Civil</h4>
+                                <p><strong>Thème :</strong> Grandes infrastructures et intégration nationale : Inga 3, RN1 & RN2 comme leviers de développement</p>
+                                <p><strong>Problématique :</strong> Comment les grandes infrastructures structurantes peuvent-elles connecter les villes de la RDC, stimuler l'économie nationale et accélérer l'intégration territoriale ?</p>
+                                <p><strong>Axes de discussion :</strong></p>
+                                <ul class="schedule-items">
+                                    <li>Inga 3 : impact sur l'industrialisation et l'intégration énergétique nationale</li>
+                                    <li>RN1 & RN2 : routes comme colonne vertébrale économique du pays</li>
+                                    <li>Ingénierie des grands projets : défis techniques, financement, durabilité</li>
+                                    <li>Rôle des ingénieurs congolais dans la conception et l'exécution des méga-projets</li>
+                                    <li>Infrastructures intelligentes et résilience face au climat</li>
+                                </ul>
+                            </div>
+
+                            <div class="panel-details" id="electrical">
+                                <h4>Panel Génie Électrique</h4>
+                                <p><strong>Thème :</strong> Transition énergétique et électrification des zones rurales : repenser le modèle énergétique congolais</p>
+                                <p><strong>Problématique :</strong> Comment fournir une énergie fiable, accessible et durable à toute la population, au-delà du modèle centralisé ?</p>
+                                <p><strong>Axes de discussion :</strong></p>
+                                <ul class="schedule-items">
+                                    <li>Transition énergétique : hydro, solaire, hybride</li>
+                                    <li>Microgrids et mini-réseaux ruraux</li>
+                                    <li>Émancipation partielle du modèle SNEL</li>
+                                    <li>Énergie comme socle de l'industrialisation et du numérique</li>
+                                    <li>Formation des ingénieurs pour les nouveaux systèmes énergétiques</li>
+                                </ul>
+                            </div>
+
+                            <div class="panel-details" id="computer">
+                                <h4>Panel Génie Informatique</h4>
+                                <p><strong>Thème :</strong> L'intelligence artificielle : un pont technologique pour rattraper l'Europe grâce aux startups africaines ?</p>
+                                <p><strong>Problématique :</strong> L'IA peut-elle permettre à l'Afrique de « sauter des étapes » et créer des champions technologiques locaux ?</p>
+                                <p><strong>Axes de discussion :</strong></p>
+                                <ul class="schedule-items">
+                                    <li>IA appliquée aux réalités africaines (santé, énergie, transport, finance)</li>
+                                    <li>Startups IA : opportunités, limites, financement</li>
+                                    <li>Données locales : le nouvel or stratégique</li>
+                                    <li>Recherche, innovation et entrepreneuriat tech</li>
+                                    <li>Ingénieurs congolais face à la compétition mondiale</li>
+                                </ul>
+                            </div>
+
+                            <div class="panel-details" id="mechanical">
+                                <h4>Panel Génie Mécanique</h4>
+                                <p><strong>Thème :</strong> Industrialisation et transformation locale des matières premières : de l'extraction à la valeur ajoutée</p>
+                                <p><strong>Problématique :</strong> Comment passer d'une économie d'exportation brute à une économie de transformation industrielle locale ?</p>
+                                <p><strong>Axes de discussion :</strong></p>
+                                <ul class="schedule-items">
+                                    <li>Transformation des minerais (cuivre, cobalt, lithium, fer, etc.)</li>
+                                    <li>Chaînes de valeur industrielles : mines → usines → produits finis</li>
+                                    <li>Machines, usines, maintenance et ingénierie locale</li>
+                                    <li>Le modèle chinois : que retenir, que ne pas copier ?</li>
+                                    <li>Opportunités pour les ingénieurs mécaniques congolais</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">12h30 - 13h30</div>
+                        <div class="schedule-content">
+                            <h3>Pause Déjeuner + Visite guidée des stands</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">13h30 - 14h30</div>
+                        <div class="schedule-content">
+                            <h3>Parcours Inspirants : Partage d'Expériences</h3>
+                            <div class="schedule-objective">
+                                <strong>Objectif :</strong> Motiver les étudiants en partageant des parcours inspirants, mettant en avant des défis surmontés et des réussites dans le domaine technologique et entrepreneurial.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">14h30 - 15h00</div>
+                        <div class="schedule-content">
+                            <h3>Annonce des Projets Finalistes pour le concours</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">15h00 - 15h30</div>
+                        <div class="schedule-content">
+                            <h3>Présentation des Nouveaux Étudiants des 4 départements</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">15h30 - 15h45</div>
+                        <div class="schedule-content">
+                            <h3>Mots de clôture 1ère journée</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">15h45 - 17h00</div>
+                        <div class="schedule-content">
+                            <h3>Visite des Stands & Réseautage</h3>
+                            <div class="schedule-objective">
+                                <strong>Objectif :</strong> Permettre aux participants de découvrir des innovations et d'établir des contacts professionnels.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="program-day" id="day2">
+                <h2>Jour 2 : Samedi 28 Février 2026 (9h00 - 17h00)</h2>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">09h00 - 09h30</div>
+                        <div class="schedule-content">
+                            <h3>Mots d'ouverture</h3>
+                            <ul class="schedule-items">
+                                <li>Mot du VDR ou représentant (15 min)</li>
+                                <li>Mot du Délégué Facultaire (15 min)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">09h30 - 10h30</div>
+                        <div class="schedule-content">
+                            <h3>Panels sur l'écosystème entrepreneurial congolais pour l'ingénieur</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">10h30 - 11h50</div>
+                        <div class="schedule-content">
+                            <h3>Phase finale - Concours des projets</h3>
+                            <p><strong>Focus :</strong> Business model, la scalabilité et l'impact économique</p>
+                            <ul class="schedule-items">
+                                <li>Annonce des instructions et déroulement (10 min)</li>
+                                <li>Pitch des projets (8 min x 8 = 70 min)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">11h50 - 12h30</div>
+                        <div class="schedule-content">
+                            <h3>Questions sur les exposés de la part des experts</h3>
+                            <p>10 min x 5 Universités = 50 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">12h30 - 13h00</div>
+                        <div class="schedule-content">
+                            <h3>Vote des étudiants et décisions des jurys</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">13h00 - 14h00</div>
+                        <div class="schedule-content">
+                            <h3>Pause Déjeuner + Visite des Stands</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">14h00 - 15h00</div>
+                        <div class="schedule-content">
+                            <h3>Panels Successful and Inspirational People (2-3 personnes)</h3>
+                            <p><strong>Format :</strong> Keynote speeches + session questions/réponses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">15h00 - 15h30</div>
+                        <div class="schedule-content">
+                            <h3>Annonce des Projets gagnants pour le concours et remise des prix</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">15h30 - 15h50</div>
+                        <div class="schedule-content">
+                            <h3>Mots de clôture et annonce des instructions pour la session stand & réseautage</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">15h50 - 17h00</div>
+                        <div class="schedule-content">
+                            <h3>Stands des entreprises, Démo projets étudiants et réseautage</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salle M - Day 2 -->
+                <h2 style="margin-top: 3rem;">Salle M - Activités parallèles</h2>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">10h00 - 13h00</div>
+                        <div class="schedule-content">
+                            <h3>Pitch des Projets par Département + Sélection des Coachs</h3>
+                            <div class="schedule-objective">
+                                <strong>Objectif :</strong> Permettre à chaque université de présenter ses projets et initier des discussions constructives sur leur développement.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-schedule">
+                    <div class="schedule-header">
+                        <div class="schedule-time">13h00 - 15h00</div>
+                        <div class="schedule-content">
+                            <h3>Coaching et Suivi des Projets</h3>
+                            <div class="schedule-objective">
+                                <strong>Objectif :</strong> Apporter un soutien ciblé aux projets, en vue de la présentation finale.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Ne manquez pas cet événement exceptionnel</h2>
+                <p>Inscrivez-vous dès maintenant pour participer à PEAK 2026</p>
+                <a href="register.html" class="btn btn-primary btn-large">S'inscrire maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PEAK 2026</h3>
+                    <p>Polytech Engineering & Applied Knowledge</p>
+                    <p>27-28 Février 2026</p>
+                    <p>Faculté Polytechnique<br>Université de Kinshasa</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="program.html">Programme</a></li>
+                        <li><a href="speakers.html">Intervenants</a></li>
+                        <li><a href="projects.html">Projets & Concours</a></li>
+                        <li><a href="partners.html">Partenaires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="register.html">Inscription</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="legal.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PEAK - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Program tabs functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.program-tab');
+            const days = document.querySelectorAll('.program-day');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const targetDay = this.getAttribute('data-day');
+                    
+                    // Remove active class from all tabs and days
+                    tabs.forEach(t => t.classList.remove('active'));
+                    days.forEach(d => d.classList.remove('active'));
+                    
+                    // Add active class to clicked tab and corresponding day
+                    this.classList.add('active');
+                    document.getElementById(targetDay).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

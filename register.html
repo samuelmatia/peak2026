@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - PEAK 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="logos/logo-blue.png" alt="PEAK 2026" class="logo-img">
+                    <div class="logo-text-wrapper">
+                        <span class="logo-text">PEAK</span>
+                        <span class="logo-year">2026</span>
+                    </div>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="program.html">Programme</a></li>
+                    <li><a href="speakers.html">Intervenants</a></li>
+                    <li><a href="projects.html">Projets & Concours</a></li>
+                    <li><a href="partners.html">Partenaires</a></li>
+                    <li><a href="register.html" class="btn-nav active">S'inscrire</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Inscription PEAK 2026</h1>
+            <p>Rejoignez-nous les 27-28 Février 2026</p>
+        </div>
+    </section>
+
+    <!-- Register Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="register-form">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: var(--color-primary);">Formulaire d'inscription</h2>
+                
+                <form id="registrationForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="firstName">Prénom *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Nom *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Téléphone *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Catégorie *</label>
+                        <select id="category" name="category" required>
+                            <option value="">Sélectionnez votre catégorie</option>
+                            <option value="student">Étudiant</option>
+                            <option value="teacher">Enseignant / Chercheur</option>
+                            <option value="professional">Professionnel / Entreprise</option>
+                            <option value="partner">Partenaire / Sponsor</option>
+                            <option value="media">Média</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="universityGroup" style="display: none;">
+                        <label for="university">Université / Institution</label>
+                        <select id="university" name="university">
+                            <option value="">Sélectionnez votre université</option>
+                            <option value="unkin">Université de Kinshasa</option>
+                            <option value="loyola">Université Loyola du Congo</option>
+                            <option value="ista">ISTA</option>
+                            <option value="isau">ISAU</option>
+                            <option value="isipa">ISIPA</option>
+                            <option value="inbtp">INBTP</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="departmentGroup" style="display: none;">
+                        <label for="department">Département</label>
+                        <select id="department" name="department">
+                            <option value="">Sélectionnez votre département</option>
+                            <option value="civil">Génie Civil</option>
+                            <option value="electrical">Génie Électrique</option>
+                            <option value="computer">Génie Informatique</option>
+                            <option value="mechanical">Génie Mécanique</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="companyGroup" style="display: none;">
+                        <label for="company">Entreprise / Organisation</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="participation">Type de participation *</label>
+                        <select id="participation" name="participation" required>
+                            <option value="">Sélectionnez votre type de participation</option>
+                            <option value="attendee">Participant</option>
+                            <option value="speaker">Intervenant</option>
+                            <option value="project">Porteur de projet (concours)</option>
+                            <option value="exhibitor">Exposant</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dietary">Régime alimentaire / Allergies</label>
+                        <textarea id="dietary" name="dietary" placeholder="Indiquez vos restrictions alimentaires si nécessaire"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Commentaires / Questions</label>
+                        <textarea id="comments" name="comments" placeholder="Avez-vous des questions ou des commentaires ?"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">J'accepte les conditions d'utilisation et la politique de confidentialité *</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Je souhaite recevoir les actualités et informations sur PEAK 2026</label>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn btn-primary btn-large">S'inscrire</button>
+                    </div>
+                </form>
+
+                <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(41, 1, 108, 0.05); border-radius: 16px; text-align: center;">
+                    <p style="color: var(--color-text-light); margin-bottom: 0.5rem;">
+                        <strong>Note :</strong> Ce formulaire peut être remplacé par un Google Form ou intégré avec un système de gestion d'inscriptions.
+                    </p>
+                    <p style="color: var(--color-text-light); font-size: 0.9rem;">
+                        Les données collectées seront utilisées uniquement pour la gestion de l'événement PEAK 2026.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PEAK 2026</h3>
+                    <p>Polytech Engineering & Applied Knowledge</p>
+                    <p>27-28 Février 2026</p>
+                    <p>Faculté Polytechnique<br>Université de Kinshasa</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="program.html">Programme</a></li>
+                        <li><a href="speakers.html">Intervenants</a></li>
+                        <li><a href="projects.html">Projets & Concours</a></li>
+                        <li><a href="partners.html">Partenaires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="register.html">Inscription</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="legal.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PEAK - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Show/hide fields based on category
+        document.getElementById('category').addEventListener('change', function() {
+            const category = this.value;
+            const universityGroup = document.getElementById('universityGroup');
+            const departmentGroup = document.getElementById('departmentGroup');
+            const companyGroup = document.getElementById('companyGroup');
+
+            if (category === 'student' || category === 'teacher') {
+                universityGroup.style.display = 'block';
+                departmentGroup.style.display = 'block';
+                companyGroup.style.display = 'none';
+            } else if (category === 'professional' || category === 'partner') {
+                companyGroup.style.display = 'block';
+                universityGroup.style.display = 'none';
+                departmentGroup.style.display = 'none';
+            } else {
+                universityGroup.style.display = 'none';
+                departmentGroup.style.display = 'none';
+                companyGroup.style.display = 'none';
+            }
+        });
+
+        // Form submission
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would normally send the data to a server
+            alert('Merci pour votre inscription ! Vous recevrez un email de confirmation sous peu.');
+            // In production, replace this with actual form submission logic
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - PEAK 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="logos/logo-blue.png" alt="PEAK 2026" class="logo-img">
+                    <div class="logo-text-wrapper">
+                        <span class="logo-text">PEAK</span>
+                        <span class="logo-year">2026</span>
+                    </div>
+                </a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="program.html">Programme</a></li>
+                    <li><a href="speakers.html">Intervenants</a></li>
+                    <li><a href="projects.html">Projets & Concours</a></li>
+                    <li><a href="partners.html">Partenaires</a></li>
+                    <li><a href="register.html" class="btn-nav">S'inscrire</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Nous sommes là pour répondre à vos questions</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="about-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Adresse</h3>
+                    <p>
+                        Faculté Polytechnique<br>
+                        Université de Kinshasa<br>
+                        Kinshasa, République Démocratique du Congo
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</h3>
+                    <p>
+                        <a href="mailto:contact@peak2026.cd">contact@peak2026.cd</a><br>
+                        <a href="mailto:info@peak2026.cd">info@peak2026.cd</a>
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3><i class="fa-solid fa-phone" aria-hidden="true"></i> Téléphone</h3>
+                    <p>
+                        <a href="tel:+243XXXXXXXXX">+243 XX XXX XX XX</a><br>
+                        <a href="tel:+243XXXXXXXXX">+243 XX XXX XX XX</a>
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3><i class="fa-solid fa-share-nodes" aria-hidden="true"></i> Réseaux Sociaux</h3>
+                    <p>
+                        <a href="#">Facebook</a><br>
+                        <a href="#">Twitter</a><br>
+                        <a href="#">LinkedIn</a><br>
+                        <a href="#">Instagram</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 3rem;">
+                <h2>Envoyez-nous un message</h2>
+                <div class="register-form" style="max-width: 800px; margin: 0 auto;">
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="contactName">Nom complet *</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email *</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Sujet *</label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="registration">Inscription</option>
+                                <option value="partnership">Partenariat</option>
+                                <option value="project">Projet / Concours</option>
+                                <option value="speaker">Intervenant</option>
+                                <option value="media">Média</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button type="submit" class="btn btn-primary btn-large">Envoyer le message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PEAK 2026</h3>
+                    <p>Polytech Engineering & Applied Knowledge</p>
+                    <p>27-28 Février 2026</p>
+                    <p>Faculté Polytechnique<br>Université de Kinshasa</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="program.html">Programme</a></li>
+                        <li><a href="speakers.html">Intervenants</a></li>
+                        <li><a href="projects.html">Projets & Concours</a></li>
+                        <li><a href="partners.html">Partenaires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="register.html">Inscription</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="legal.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PEAK - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
+            // In production, replace this with actual form submission logic
+        });
+    </script>
+</body>
+</html>
